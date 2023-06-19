@@ -1,0 +1,41 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  gap: 1rem;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.25rem;
+  background-color: #dfe4ea;
+  border-radius: 1px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+}
+
+.dot.active {
+  background-color: #0a0e12;
+}
+
+@media (max-width: 768px) {
+  .dot {
+    width: 1.5rem;
+    height: 0.25rem;
+  }
+}
